@@ -1,6 +1,6 @@
 # sql script
 
--- สร้างตารางให้ตรงกับในรูป
+-- สร้างตาราง Customers
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
     name VARCHAR(100),
@@ -10,7 +10,7 @@ CREATE TABLE Customers (
     status INT
 );
 
--- เพิ่มข้อมูลตามรูปภาพ
+-- เพิ่มข้อมูลตาราง Customers
 INSERT INTO Customers (customer_id, name, date_of_birth, city, zipcode, status) 
 VALUES
     (2000, 'Steve', '1978-12-15', 'Delhi', '110075', 1),
@@ -30,7 +30,7 @@ CREATE TABLE Accounts (
     status INT
 );
 
--- เพิ่มข้อมูลตามรูปภาพ
+-- เพิ่มข้อมูลตาราง Accounts
 INSERT INTO Accounts (account_id, customer_id, opening_date, account_type, amount, status) 
 VALUES
     (95470, 2000, '2020-08-22 10:20:06', 'saving', 6823.23, 1),
