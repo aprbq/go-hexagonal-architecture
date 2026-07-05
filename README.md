@@ -1,10 +1,10 @@
 # Bank — Go Hexagonal Architecture
 
-![Go](https://img.shields.io/badge/Go-1.25-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![gorilla/mux](https://img.shields.io/badge/gorilla%2Fmux-router-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![sqlx](https://img.shields.io/badge/sqlx-db-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![viper](https://img.shields.io/badge/viper-config-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Go](https://img.shields.io/badge/Go-1.25-00ADD8?logo=go&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![gorilla/mux](https://img.shields.io/badge/gorilla%2Fmux-router-00ADD8?logo=go&logoColor=white)
+![sqlx](https://img.shields.io/badge/sqlx-db-00ADD8?logo=go&logoColor=white)
+![viper](https://img.shields.io/badge/viper-config-00ADD8?logo=go&logoColor=white)
 
 ตัวอย่าง Banking service เขียนด้วย Go ตามแนวคิด **Hexagonal Architecture (Ports & Adapters)**
 เพื่อแยกส่วน business logic ออกจาก infrastructure (HTTP, Database) ให้ทดสอบและเปลี่ยน adapter ได้ง่าย
