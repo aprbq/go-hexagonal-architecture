@@ -1,0 +1,10 @@
+app:
+  port: 8080
+
+db:
+  driver: "postgres"
+  host: "localhost"
+  port: 5432
+  username: postgres
+  password: kook0990
+  database: banking
