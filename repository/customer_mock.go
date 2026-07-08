@@ -1,6 +1,8 @@
 package repository
 
-import "errors"
+import (
+	"bank/errs"
+)
 
 type customerRepositoryMock struct {
 	customers []Customer
@@ -27,5 +29,5 @@ func (r customerRepositoryMock) GetById(id int) (*Customer, error) {
 		}
 	}
 
-	return nil, errors.New("customer not found")
+	return nil, errs.NewNotfoundError("customer not found")
 }
