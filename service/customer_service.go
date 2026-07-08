@@ -15,6 +15,7 @@ func NewCustomerService(custRepo repository.CustomerRepository) CustomerService 
 	return customerService{custRepo: custRepo}
 }
 
+// Business Logic ของ customer
 func (s customerService) GetCustomers() ([]CustomerResponse, error) {
 	customers, err := s.custRepo.GetAll()
 	if err != nil {
