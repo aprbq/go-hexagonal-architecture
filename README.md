@@ -20,7 +20,7 @@
 </p>
 
 ## แนวคิด 
-    core (**Entities**) อยู่ตรงกลาง ล้อมด้วย business logic แล้วค่อยเป็น adapter รอบนอก 
+    core **Entities** อยู่ตรงกลาง ล้อมด้วย business logic แล้วค่อยเป็น adapter รอบนอก 
     สิ่งภายนอก (HTTP, SQS, DB, gRPC, REST) เสียบเข้าหา core ผ่าน port โดย core ไม่รู้จักตัวมันโดยตรง
 
 | ในภาพ | ในโปรเจคนี้ |
@@ -159,3 +159,6 @@ Response:
 
 - ชื่อไฟล์นิยมใช้ `snake_case` (ไม่บังคับ แค่ช่วยให้อ่านง่าย)
 - การเป็น public/private ดูจากอักษรตัวแรกของชื่อ: ตัวใหญ่ = public (export), ตัวเล็ก = private
+
+- interfcae{} -> object สามารถรับได้หมดทุกอย่าง
+- service(business logic) ควรจัดการ error repo แค่ ส่งต่อๆ
